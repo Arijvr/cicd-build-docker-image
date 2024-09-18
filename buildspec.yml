@@ -6,11 +6,10 @@ phases:
       python: 3.x
 
 pre_build:
-commands:
-- chmod +x build-image.sh
-- chmod +x push-image.sh
-- ./build-image.sh
-
-  build:
-    commands:
+  commands:
+    - chmod +x build-image.sh
+    - chmod +x push-image.sh
+    - ./build-image.sh
+build:
+  commands:
       - ./push-image.sh
