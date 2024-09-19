@@ -12,4 +12,4 @@ pre_build:
     - ./build-image.sh
 build:
   commands:
-      - ./push-image.sh
+    - ./push-image.sh
